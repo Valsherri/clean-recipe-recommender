@@ -1,0 +1,33 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "64ea1ef1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "services:\n",
+    "  - type: web\n",
+    "    name: recipe-recommender\n",
+    "    env: python\n",
+    "    buildCommand: pip install -r requirements.txt\n",
+    "    startCommand: python app.py\n",
+    "    plan: free\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "learn-env",
+   "language": "python",
+   "name": "learn-env"
+  },
+  "language_info": {
+   "name": "python",
+   "version": "3.11.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
